@@ -73,7 +73,10 @@ insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, st
         values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2023-01-08', 'YYYY-MM-DD'),to_date('2023-09-09', 'YYYY-MM-DD'), 21, '종료');
         
 
+select * from tblStudent;
 
+
+select * from tblClassRegistration;
 -- 수업등록
 insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
         values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 1, 1);
@@ -120,13 +123,25 @@ insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
 insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
         values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 22, 1);
 insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
-        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 23, 1);
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 23, 1);        
 insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
         values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 24, 1);
 insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
         values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 25, 1);
+insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 26, 1);        
+insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 27, 1);        
+insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 28, 1);
+insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 29, 1);   
+insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 30, 1);        
+insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 31, 1);            
         
-        
+    
 select * from tblVolunteer;  
 
 
@@ -196,6 +211,50 @@ insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel)
         values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 1, '유아인', to_date('2024-12-10','YYYY-MM-DD'),'960210-2123456','010-6655-4433');        
 insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel)
         values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 1, '정려원', to_date('2024-12-15','YYYY-MM-DD'),'920311-1234567','010-1274-5678');
+        
+        
+        
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '김동건', to_date('2024-12-15','YYYY-MM-DD'), '3006100370608', '010-6046-7323');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '한승호', to_date('2024-12-15','YYYY-MM-DD'), '7105220641001', '010-8241-0977');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '윤지성', to_date('2024-12-15','YYYY-MM-DD'), '7610033481022', '010-1003-0486');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '남미경', to_date('2024-12-15','YYYY-MM-DD'), '1008300444885', '010-4150-0115');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '정태희', to_date('2024-12-15','YYYY-MM-DD'), '8412064166445', '010-3465-0018');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '김재석', to_date('2024-12-15','YYYY-MM-DD'), '1807127770196', '010-4581-8901');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '윤재석', to_date('2024-12-15','YYYY-MM-DD'), '7903174231861', '010-7726-6169');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '정성호', to_date('2024-12-15','YYYY-MM-DD'), '2808254909906', '010-1294-8349');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '윤동건', to_date('2024-12-15','YYYY-MM-DD'), '7508263425379', '010-4801-6964');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '장성호', to_date('2024-12-15','YYYY-MM-DD'), '1103047554668', '010-3272-3499');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '오지성', to_date('2024-12-15','YYYY-MM-DD'), '8603023004907', '010-6978-0616');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '한성호', to_date('2024-12-15','YYYY-MM-DD'), '5303272131795', '010-8443-8887');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '윤미영', to_date('2024-12-15','YYYY-MM-DD'), '3305318600884', '010-0589-7474');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '임승호', to_date('2024-12-15','YYYY-MM-DD'), '6002152107044', '010-2906-9506');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '임동건', to_date('2024-12-15','YYYY-MM-DD'), '6412178790682', '010-6903-7490');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '최재근', to_date('2024-12-15','YYYY-MM-DD'), '5601222628579', '010-2880-9629');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '김준수', to_date('2024-12-15','YYYY-MM-DD'), '9201285055404', '010-1127-2313');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '정예림', to_date('2024-12-15','YYYY-MM-DD'), '2511197958738', '010-4072-9219');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '서준수', to_date('2024-12-15','YYYY-MM-DD'), '1705293042529', '010-0706-2894');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '최미숙', to_date('2024-12-15','YYYY-MM-DD'), '7610240899428', '010-3441-2306');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '한예림', to_date('2024-12-15','YYYY-MM-DD'), '9505241363832', '010-8028-8117');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '서성호', to_date('2024-12-15','YYYY-MM-DD'), '1608159368697', '010-6142-8601');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '한미영', to_date('2024-12-15','YYYY-MM-DD'), '3901116173657', '010-3459-1231');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '조태희', to_date('2024-12-15','YYYY-MM-DD'), '0506244144973', '010-0407-2250');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '임재석', to_date('2024-12-15','YYYY-MM-DD'), '9105072625054', '010-3337-4208');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '윤은정', to_date('2024-12-15','YYYY-MM-DD'), '6411202953722', '010-3652-8617');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '임동건', to_date('2024-12-15','YYYY-MM-DD'), '6602050744741', '010-9123-1499');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '양지성', to_date('2024-12-15','YYYY-MM-DD'), '7711061494196', '010-2326-6999');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '윤은정', to_date('2024-12-15','YYYY-MM-DD'), '2903116733156', '010-9093-0458');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '한재석', to_date('2024-12-15','YYYY-MM-DD'), '7612086845801', '010-8147-0919');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '한재석', to_date('2024-12-15','YYYY-MM-DD'), '8802146380633', '010-7299-6797');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '이준수', to_date('2024-12-15','YYYY-MM-DD'), '1702297834376', '010-3337-0294');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '이미숙', to_date('2024-12-15','YYYY-MM-DD'), '8610179509650', '010-9635-5672');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '정동건', to_date('2024-12-15','YYYY-MM-DD'), '2402097719096', '010-2751-7742');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '서준수', to_date('2024-12-15','YYYY-MM-DD'), '4009060768793', '010-8004-3661');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '임재근', to_date('2024-12-15','YYYY-MM-DD'), '6702230428134', '010-4002-8591');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '양유미', to_date('2024-12-15','YYYY-MM-DD'), '2406161131901', '010-6210-0526');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '정동건', to_date('2024-12-15','YYYY-MM-DD'), '0002182610281', '010-5953-3918');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '이태희', to_date('2024-12-15','YYYY-MM-DD'), '2110061331338', '010-6866-1928');
+insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 2, '정미영', to_date('2024-12-15','YYYY-MM-DD'), '9405268886135', '010-7714-8309');
+
 
 
        
@@ -216,6 +275,8 @@ insert into tblInterview (seq, employeeNum, interviewDate )
         
  
 select * from tblInterviewResult;
+
+select * from tblInterviewResult where result = '합격';
 
 -- 면접결과
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
