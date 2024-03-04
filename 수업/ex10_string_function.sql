@@ -283,6 +283,34 @@ from tblComedian;
 
 
 
+create table test (
+    n1 number,
+    n2 number,
+    n3 number
+);
+
+drop table test;
+delete test;
+insert into test values (1 ,null, null);
+
+select
+*
+from test;
 
 
+-- 테이블 생성
+CREATE TABLE test (
+    n1 NUMBER,
+    n2 NUMBER,
+    n3 NUMBER
+);
+
+-- 데이터 삽입
+INSERT INTO test (n1, n2) VALUES (1, NULL);
+
+-- n3 계산 및 저장
+UPDATE test SET n3 = n1 + n2;
+
+-- 테이블 내용 확인
+SELECT * FROM test;
 
