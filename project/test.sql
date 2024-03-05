@@ -1,161 +1,172 @@
--- SSH
+create table tblStudent ( --교육생
+    seq number, --교육생번호
+    name varchar2(100), --교육생이름
+    registrationDay DATE, --등록일
+    ssn varchar2(100), --주민번호
+    tel varchar2(100), --전화번호
+    completionCount number --수료횟수
+);
 
---과정 - AWS와 Elasticsearch 활용 자바 기반 Full-Stack 개발자 양성 과정 
---강의실
---개설과정
---수업등록
---지원자
---면접결과
---면접
-
-
--- 과정
-insert into tblCurriculum (seq, name, goals, period)
-        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'AWS와 Elasticsearch 활용 자바 기반 Full-Stack 개발자 양성 과정', 'Full-Stack 개발 능력 강화', 5.5); 
-insert into tblCurriculum (seq, name, goals, period)
-        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'AWS와 Docker/Kubernetes를 활용한 Java Full-Stack 개발자 양성과정', 'Docker 및 Kubernetes 이해', 6);        
-insert into tblCurriculum (seq, name, goals, period)
-        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'AWS 클라우드와 Kafka를 활용한 Java(자바) Full-Stack 개발자 양성', 'Kafka를 활용한 데이터 스트리밍 처리',7);
-insert into tblCurriculum (seq, name, goals, period)
-        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), '공공데이터 융합 자바개발자 양성 과정', '자바 프로그래밍 능력 강화', 6);
-insert into tblCurriculum (seq, name, goals, period)
-        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), '웹 서비스(AWS) 구축을 위한 리눅스와 인프라 자동화과정', '리눅스 서버 관리 능력 향상', 7);
-insert into tblCurriculum (seq, name, goals, period)
-        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'Python/Django를 활용한 SNS 어플리케이션 제작 실무', 'SNS 어플리케이션 설계 및 구현 능력 향상', 5.5);
-        
-
-        
--- 강의실
-insert into tblClassroom (seq, maxStudent)
-        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 30);
-insert into tblClassroom (seq, maxStudent)
-        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 30);
-insert into tblClassroom (seq, maxStudent)
-        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 30);        
-insert into tblClassroom (seq, maxStudent)
-        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 26);
-insert into tblClassroom (seq, maxStudent)
-        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 26);        
-insert into tblClassroom (seq, maxStudent)
-        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 26);        
-        
-        
--- 개설과정
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 1, 1, to_date('2023-12-29', 'YYYY-MM-DD'),to_date('2024-06-17', 'YYYY-MM-DD'), 25, '진행중');
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 2, 2, to_date('2024-01-02', 'YYYY-MM-DD'),to_date('2024-08-02', 'YYYY-MM-DD'), 30, '진행중');        
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2023-01-08', 'YYYY-MM-DD'),to_date('2024-09-09', 'YYYY-MM-DD'), 22, '진행중');
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 4, 4, 4, to_date('2023-01-15', 'YYYY-MM-DD'),to_date('2024-07-31', 'YYYY-MM-DD'), 26, '진행중');
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 5, 5, 5, to_date('2023-01-29', 'YYYY-MM-DD'),to_date('2024-09-30', 'YYYY-MM-DD'), 18, '진행중');
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 6, 6, 6, to_date('2023-02-05', 'YYYY-MM-DD'),to_date('2024-07-19', 'YYYY-MM-DD'), 23, '진행중');
-        
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 7, 1, to_date('2024-07-01', 'YYYY-MM-DD'),to_date('2024-12-16', 'YYYY-MM-DD'), 30, '대기');
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 8, 2, to_date('2024-09-02', 'YYYY-MM-DD'),to_date('2025-04-02', 'YYYY-MM-DD'), 30, '대기');
-
-        
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 1, 1, to_date('2022-12-29', 'YYYY-MM-DD'),to_date('2023-06-17', 'YYYY-MM-DD'), 23, '종료');
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 2, 2, to_date('2023-01-02', 'YYYY-MM-DD'),to_date('2023-08-02', 'YYYY-MM-DD'), 30, '종료');        
-insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2023-01-08', 'YYYY-MM-DD'),to_date('2023-09-09', 'YYYY-MM-DD'), 21, '종료');
-        
+alter table tblStudent
+    add constraint tblStudent_seq_pk primary key(seq); 
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'신기루',to_date('2023-12-28','yyyy-mm-dd'),'991108-1484695','010-1485-5867',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'임지연',to_date('2023-12-28','yyyy-mm-dd'),'991214-1846872','010-5749-2139',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍석천',to_date('2023-11-20','yyyy-mm-dd'),'991115-2489833','010-7531-2348',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오무석',to_date('2023-10-15','yyyy-mm-dd'),'991218-2547984','010-4423-3708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김지현',to_date('2023-09-14','yyyy-mm-dd'),'971122-2456232','010-3856-4397',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'엄지현',to_date('2023-09-11','yyyy-mm-dd'),'960405-1489837','010-6543-9823',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김주엽',to_date('2023-08-19','yyyy-mm-dd'),'990523-1234856','010-4753-5433',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박선영',to_date('2023-08-16','yyyy-mm-dd'),'011131-4357915','010-5862-4632',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오미숙',to_date('2023-08-01','yyyy-mm-dd'),'011117-4891524','010-4699-8124',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이기준',to_date('2023-07-05','yyyy-mm-dd'),'011113-4268923','010-1523-4526',1);    
 
 select * from tblStudent;
 
-
-select * from tblClassRegistration;
--- 수업등록
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 1, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 2, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 3, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 4, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 5, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 6, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 7, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 8, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 9, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 10, 7);        
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 11, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 12, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 13, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 14, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 15, 7);               
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 16, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 17, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 18, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 19, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 20, 7);        
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 21, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 22, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 23, 7);        
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 24, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 25, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 26, 7);        
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 27, 7);        
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 28, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 29, 7);   
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 30, 7);        
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 31, 7);
---insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), 32, 7); 
+--상담신청
+create table tblRequestConsultation(
+    seq number,
+    studentNum number,
+    content varchar2(1000)
+);
+alter table tblRequestConsultation
+    add constraint tblRequestConsultation_seq_pk primary key(seq);
+alter table tblRequestConsultation
+    add constraint tblRequestConsultation_studentNum_fk foreign key(studentNum) references tblStudent(seq); 
+    
+insert into tblRequestConsultation (seq, studentNum, content)
+        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 1, '학원생활');
+insert into tblRequestConsultation (seq, studentNum, content)
+        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 2, '취업');         
+insert into tblRequestConsultation (seq, studentNum, content)
+        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 4, '학원생활');
+insert into tblRequestConsultation (seq, studentNum, content)
+        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 5, '취업');      
+         
+delete from tblRequestConsultation;
+select * from tblRequestConsultation;
+--상담
+create table tblCounseling(
+    seq number,
+    scheduleNum number,
+    requestConsultationNum number
+);
 
 
-create or replace trigger trgClassRegistration
+alter table tblCounseling
+    add constraint tblCounseling_seq_pk primary key(seq);
+alter table tblCounseling
+    add constraint tblCounseling_scheduleNum_fk foreign key(scheduleNum) references tblSchedule(seq);    
+alter table tblCounseling
+    add constraint tblCounseling_requestConsultationNum_fk foreign key(requestConsultationNum) references tblRequestConsultation(seq);       
+    
+select * from tblCounseling;
+delete from tblCounseling;
+--스케줄
+create table tblSchedule(
+    seq number,
+    employeeNum number,
+    scheduledate date,
+    content varchar2(1000)
+);
+alter table tblSchedule
+    add constraint tblSchedule_seq_pk primary key(seq);
+    
+alter table tblSchedule
+    add constraint tblSchedule_employeeNum_fk foreign key(employeeNum) references tblEmployee(seq);
+    
+insert into tblSchedule (seq, employeeNum, scheduledate,content) 
+        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 1, to_date('2024-01-10','YYYY-MM-DD') ,'상담');
+insert into tblSchedule (seq, employeeNum, scheduledate,content)
+        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 2, to_date('2024-01-12','YYYY-MM-DD') ,'상담');
+insert into tblSchedule (seq, employeeNum, scheduledate,content)
+        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 3, to_date('2024-01-15','YYYY-MM-DD') ,'휴가');
+insert into tblSchedule (seq, employeeNum, scheduledate,content)
+        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 4, to_date('2024-01-17','YYYY-MM-DD') ,'개인사정');    
+    
+select * from tblSchedule;
+
+create table tblEmployee(
+    seq number not null,             --吏곸썝踰덊샇(PK)
+    name varchar2(100) not null,     --�씠由�
+    ssn varchar2(100) not null,      --二쇰�쇰쾲�샇
+    tel varchar2(100) not null,      --�쟾�솕踰덊샇
+    position varchar2(100) not null  --�룷吏��뀡
+);
+alter table tblEmployee
+    add constraint tblEmployee_seq_pk primary key(seq);    
+
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '박세인', '111111-1111111', '010-1111-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '체제원', '801203-1111112', '010-1112-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '곽우신', '811203-1111113', '010-1113-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '이창익', '821203-1111114', '010-1114-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '박세인', '811203-1111115', '010-1115-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '이규미', '831203-1111116', '010-1116-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '김호진', '851203-1111117', '010-1117-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '김대기', '811203-1111118', '010-1118-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '서영학', '881203-1111119', '010-1119-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '한장희', '871203-1111110', '010-1110-1111', '교사');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '박찬희', '821203-1111151', '010-1151-1111', '관리자');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '장일규', '841203-1111161', '010-1161-1111', '관리자');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '홍길동', '811203-1111171', '010-1171-1111', '관리자');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '아무개', '841203-1111181', '010-1181-1111', '관리자');
+insert into tblEmployee values((select nvl(max(seq),0) + 1 from tblEmployee), '가가가', '853203-1111181', '010-2181-1111', '관리자');    
+    
+-- 수정된 트리거
+create or replace trigger trgCounseling
     after
     insert
-    on tblStudent
+    on tblRequestConsultation
     for each row
-begin
-    
-    insert into tblClassRegistration (seq, studentNum, openCurriculumNum,graduateDate )
-        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), :new.seq, (select v.openCurriculumNum from tblVolunteer v where :new.name = v.name and :new.ssn = v.ssn),(select o.endDate from openCurriculumNum o inner join tblVolunteer v on o.seq = v.openCurriculumNum  where :new.name = v.name and :new.ssn = v.ssn));
-      
-end trgClassRegistration;
+BEGIN
+    -- tblCounseling에 새로운 상담 행을 추가하는 프로시저 호출
+    procCounseling(:new.seq);
+END trgCounseling;
 /
 
-            
-  
-select * from tblVolunteer;  
--- 지원자
+
+CREATE OR REPLACE PROCEDURE procCounseling(
+    pstudentNum IN NUMBER
+)
+IS
+    vscheduleNum NUMBER;
+BEGIN
+    -- 상담 가능한 스케줄 중에서 이미 배정된 상담이 없는 스케줄을 선택합니다.
+    FOR s IN (
+        SELECT s.seq
+        FROM tblSchedule s
+        WHERE s.content = '상담' AND s.seq NOT IN (
+            SELECT DISTINCT c.scheduleNum
+            FROM tblCounseling c
+        )
+    )
+    LOOP
+        -- 상담 테이블에 상담 스케줄 번호와 상담 신청 번호를 삽입합니다.
+        INSERT INTO tblCounseling (seq, scheduleNum, requestConsultationNum)
+        VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblCounseling), s.seq, pstudentNum );
+        -- 상담 신청이 배정되면 반복문을 종료합니다.
+        EXIT;
+    END LOOP;
+END;
+/
+
+
+----------------------------------------------------------지원자
+
+
+create table tblVolunteer (                 -- 筌욑옙占쎌뜚占쎌쁽 占쎈�믭옙�뵠�뇡占�
+    seq number,                             -- 筌욑옙占쎌뜚占쎌쁽 甕곕뜇�깈
+    openCurriculumNum number,               -- 揶쏆뮇苑뺞�⑥눘�젟 甕곕뜇�깈
+    name varchar2(100),                         -- 筌욑옙占쎌뜚占쎌쁽 占쎌뵠�뵳占�
+    volunteerDate date,                     -- 筌욑옙占쎌뜚占쎄텊筌욑옙
+    ssn varchar2(100),                             -- 雅뚯눖占쎌눖踰묉에�빖苡뀐옙�깈
+    tel varchar2(100)                              -- 占쎌읈占쎌넅甕곕뜇�깈
+);
+alter table tblVolunteer
+    add constraint tblVolunteer_seq_pk primary key(seq);
+    
+alter table tblVolunteer 
+    add constraint tblVolunteer_openCurriculumNum_fk foreign key (openCurriculumNum) references tblOpenCurriculum (seq);
+    
 insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 7, '아무개', to_date('2024-06-10','YYYY-MM-DD'),'990817-1234567','010-1234-5678');
 insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 7, '김태희', to_date('2024-06-10','YYYY-MM-DD'),'920101-1234568','010-2345-6789');       
 insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 7, '이순신', to_date('2024-06-10','YYYY-MM-DD'),'890211-2345678','010-3456-7890');        
@@ -236,13 +247,123 @@ insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel)
 insert into tblVolunteer (seq, openCurriculumNum, name, volunteerDate, ssn, tel) values ((select nvl(max(seq), 0) + 1 from tblVolunteer), 8, '변정혜', to_date('2024-08-21','YYYY-MM-DD'), '941022-4326710', '010-8836-1709'); --42개 --74개
 
 
+drop table tblOpenCurriculum;
+drop table tblClassroom;
+drop table tblEmployee;
+drop table tblCurriculum;
+drop table tblVolunteer;
+drop table tblInterviewResult;
+
+create table tblOpenCurriculum (             
+    seq number,                              
+    curriculumNum number,                    
+    employeeNum number,                      
+    classroomNum number,                     
+    startDate date,                          
+    endDate date,                            
+    participation number,                    
+    openRegistrationStatus varchar2(10)      
+);
+
+alter table tblOpenCurriculum 
+    add constraint tblOpenCurriculum_seq_pk primary key(seq); 
+
+
+alter table tblOpenCurriculum 
+    add constraint tblOpenCurriculum_curriculumNum_fk foreign key (curriculumNum) references tblCurriculum (seq); 
+alter table tblOpenCurriculum 
+    add constraint tblOpenCurriculum_employeeNum_fk foreign key (employeeNum) references tblEmployee (seq);  
+alter table tblOpenCurriculum 
+    add constraint tblOpenCurriculum_classroomNum_fk foreign key (classroomNum) references tblClassroom (seq); 
 
 
 
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 1, 1, to_date('2023-12-29', 'YYYY-MM-DD'),to_date('2024-06-17', 'YYYY-MM-DD'), 25, '진행중');
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 2, 2, to_date('2024-01-02', 'YYYY-MM-DD'),to_date('2024-08-02', 'YYYY-MM-DD'), 30, '진행중');        
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2023-01-08', 'YYYY-MM-DD'),to_date('2024-09-09', 'YYYY-MM-DD'), 22, '진행중');
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 4, 4, 4, to_date('2023-01-15', 'YYYY-MM-DD'),to_date('2024-07-31', 'YYYY-MM-DD'), 26, '진행중');
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 5, 5, 5, to_date('2023-01-29', 'YYYY-MM-DD'),to_date('2024-09-30', 'YYYY-MM-DD'), 18, '진행중');
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 6, 6, 6, to_date('2023-02-05', 'YYYY-MM-DD'),to_date('2024-07-19', 'YYYY-MM-DD'), 23, '진행중');
+        
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 7, 1, to_date('2024-07-01', 'YYYY-MM-DD'),to_date('2024-12-16', 'YYYY-MM-DD'), 30, '대기');
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 8, 2, to_date('2024-09-02', 'YYYY-MM-DD'),to_date('2025-04-02', 'YYYY-MM-DD'), 30, '대기');
 
-       
-select * from tblInterview;
--- 면접
+        
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 1, 1, to_date('2022-12-29', 'YYYY-MM-DD'),to_date('2023-06-17', 'YYYY-MM-DD'), 23, '종료');
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 2, 2, to_date('2023-01-02', 'YYYY-MM-DD'),to_date('2023-08-02', 'YYYY-MM-DD'), 30, '종료');        
+insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2023-01-08', 'YYYY-MM-DD'),to_date('2023-09-09', 'YYYY-MM-DD'), 21, '종료');
+        
+
+
+create table tblCurriculum (                -- �⑥눘�젟 占쎈�믭옙�뵠�뇡占�
+    seq number,                             -- �⑥눘�젟 甕곕뜇�깈
+    name varchar2(100),                     -- �⑥눘�젟筌륅옙
+    goals varchar2(100),                    -- �⑥눘�젟筌뤴뫚紐�
+    period number                             -- �⑥눘�젟疫꿸퀗而�
+);
+alter table tblCurriculum 
+    add constraint tblCurriculum_seq_pk primary key(seq);  
+
+
+insert into tblCurriculum (seq, name, goals, period)
+        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'AWS와 Elasticsearch 활용 자바 기반 Full-Stack 개발자 양성 과정', 'Full-Stack 개발 능력 강화', 5.5); 
+insert into tblCurriculum (seq, name, goals, period)
+        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'AWS와 Docker/Kubernetes를 활용한 Java Full-Stack 개발자 양성과정', 'Docker 및 Kubernetes 이해', 6);        
+insert into tblCurriculum (seq, name, goals, period)
+        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'AWS 클라우드와 Kafka를 활용한 Java(자바) Full-Stack 개발자 양성', 'Kafka를 활용한 데이터 스트리밍 처리',7);
+insert into tblCurriculum (seq, name, goals, period)
+        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), '공공데이터 융합 자바개발자 양성 과정', '자바 프로그래밍 능력 강화', 6);
+insert into tblCurriculum (seq, name, goals, period)
+        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), '웹 서비스(AWS) 구축을 위한 리눅스와 인프라 자동화과정', '리눅스 서버 관리 능력 향상', 7);
+insert into tblCurriculum (seq, name, goals, period)
+        values ((select nvl(max(seq), 0) + 1 from tblCurriculum), 'Python/Django를 활용한 SNS 어플리케이션 제작 실무', 'SNS 어플리케이션 설계 및 구현 능력 향상', 5.5);
+    
+ 
+select * from tblCurriculum;
+ 
+    
+create table tblClassroom (                      -- 揶쏅벡�벥占쎈뼄 占쎈�믭옙�뵠�뇡占�
+    seq number,                                  -- 占쎈즲占쎄퐣 甕곕뜇�깈
+    maxStudent number                            -- 占쎌젟占쎌뜚
+);
+         
+alter table tblClassroom 
+    add constraint tblClassroom_seq_pk primary key(seq);    
+
+insert into tblClassroom (seq, maxStudent)
+        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 30);
+insert into tblClassroom (seq, maxStudent)
+        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 30);
+insert into tblClassroom (seq, maxStudent)
+        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 30);        
+insert into tblClassroom (seq, maxStudent)
+        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 26);
+insert into tblClassroom (seq, maxStudent)
+        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 26);        
+insert into tblClassroom (seq, maxStudent)
+        values ((select nvl(max(seq), 0) + 1 from tblClassroom), 26);     
+    
+create table tblInterview (                 -- 筌롫똻�젔 占쎈�믭옙�뵠�뇡占�
+    seq number,                             -- 筌롫똻�젔 甕곕뜇�깈
+    employeeNum number,                     -- 筌욊낯�뜚 甕곕뜇�깈
+    interviewDate date                      -- 筌롫똻�젔占쎄텊筌욑옙
+);
+alter table tblInterview
+    add constraint tblInterview_seq_pk primary key(seq); 
+alter table tblInterview 
+    add constraint tblInterview_employeeNum_fk foreign key (employeeNum) references tblEmployee (seq);        
+    
 insert into tblInterview (seq, employeeNum, interviewDate )
         values ((select nvl(max(seq), 0) + 1 from tblInterview), 11,to_date('2024-06-14','YYYY-MM-DD'));
 insert into tblInterview (seq, employeeNum, interviewDate )
@@ -256,17 +377,27 @@ insert into tblInterview (seq, employeeNum, interviewDate )
 insert into tblInterview (seq, employeeNum, interviewDate )
         values ((select nvl(max(seq), 0) + 1 from tblInterview), 11,to_date('2024-08-16','YYYY-MM-DD'));
 insert into tblInterview (seq, employeeNum, interviewDate )
-        values ((select nvl(max(seq), 0) + 1 from tblInterview), 11,to_date('2024-08-23','YYYY-MM-DD'));                       
-                    
-
+        values ((select nvl(max(seq), 0) + 1 from tblInterview), 11,to_date('2024-08-23','YYYY-MM-DD'));  
         
         
+select * from  tblInterview;       
         
-select * from tblInterviewResult;
+drop table tblInterviewResult;
 
-select * from tblInterviewResult where result = '합격';
+create table tblInterviewResult (           -- 筌롫똻�젔野껉퀗�궢 占쎈�믭옙�뵠�뇡占�
+    seq number,                             -- 筌롫똻�젔野껉퀗�궢 甕곕뜇�깈
+    interviewNum number,                    -- 筌롫똻�젔 甕곕뜇�깈
+    volunteerNum number,                    -- 筌욑옙占쎌뜚占쎌쁽 甕곕뜇�깈
+    result varchar2(10)                     -- 野껉퀗�궢
+);
+alter table tblInterviewResult
+    add constraint tblInterviewResult_seq_pk primary key(seq);    
+alter table tblInterviewResult 
+    add constraint tblInterviewResult_interviewNum_fk foreign key (interviewNum) references tblInterview (seq);
+alter table tblInterviewResult 
+    add constraint tblInterviewResult_volunteerNum_fk foreign key (volunteerNum) references tblVolunteer (seq); 
 
--- 면접결과
+
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
         values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 1, 1, '합격');
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
@@ -416,219 +547,86 @@ insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
         values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 6, 74, '합격');
 
-        
-        
-
-        
-
--- 상담신청
-insert into tblRequestConsultation (seq, studentNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 1, '학원생활');
-insert into tblRequestConsultation (seq, studentNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 2, '취업');         
-insert into tblRequestConsultation (seq, studentNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 6, '학원생활');        
-insert into tblRequestConsultation (seq, studentNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 10, '과제');        
-insert into tblRequestConsultation (seq, studentNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblRequestConsultation), 11, '과제');        
-     
-select * from tblRequestConsultation;         
-        
--- 상담
-insert into tblCounseling (seq, scheduleNum, requestConsultationNum)
-        values ((select nvl(max(seq), 0) + 1 from tblCounseling), 1, 1);
-insert into tblCounseling (seq, scheduleNum, requestConsultationNum)
-        values ((select nvl(max(seq), 0) + 1 from tblCounseling), 2, 2);
-
-select * from tblCounseling;
-
--- 스케줄
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 1, to_date('2024-01-10','YYYY-MM-DD') ,'상담');
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 2, to_date('2024-01-12','YYYY-MM-DD') ,'상담');
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 3, to_date('2024-01-15','YYYY-MM-DD') ,'휴가');
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 4, to_date('2024-01-17','YYYY-MM-DD') ,'개인사정');
-        
-select * from tblSchedule;     
+delete from tblInterviewResult;
+select * from tblInterviewResult;   
 
 
-create or replace trigger trgCounseling
-    after
-    insert
-    on tblRequestConsultation
-    for each row
-begin
-    
-    procCounseling(:new.studentNum);
-    
-end trgCounseling;
-/
+alter trigger trgStudent enable;  
 
+select  * from tblStudent;
 
-
-
-create or replace procedure procCounseling(
-    pstudentNum in number
-)
-is
-    cursor vcursor is 
-    select 
-        d.seq as "학생 번호",
-        d.name as "학생 이름",
-        e.seq as "교사 번호",
-        e.name as "교사 이름",
-        s.scheduledate as "상담 일자",
-        l.content as "상담 내용"
-    from tblRequestConsultation r
-    inner join tblStudent d
-        on r.studentNum = d.seq
-            inner join tblCounseling c
-                on r.seq = c.requestConsultationNum
-                    inner join tblSchedule s
-                        on s.seq = c.scheduleNum
-                            inner join tblEmployee e
-                                on s.employeeNum = e.seq
-                                    inner join tblCounselList l
-                                        on l.CounselingNum = c.seq
-    where pstudentNum = d.seq;   
-    
-    vscheduleNum number;
-    vrequestConsultationNum number;
-    
-    cursor vcursor2 is 
-    select s.seq, r.seq
-    into vscheduleNum, vrequestConsultationNum
-    from tblSchedule s
-        left outer join tblCounseling c
-            on s.seq = c.scheduleNum
-    where s.content = '상담' and c.requestConsultationNum in null ;
-    vnum number :=0;
-begin  
-    
-    for vrow in vcursor2 loop 
-    if c.requestConsultationNum is null then
-        insert into tblCounseling (seq, scheduleNum, requestConsultationNum)
-        values ((select nvl(max(seq), 0) + 1 from tblCounseling), vscheduleNum, vrequestConsultationNum);
-        vnum := vnum +1;
-    end if;
-    
-    exit when vnum = 1;
-    end loop;
-end;
-/
-
-select *
-    from tblSchedule s
-        left outer join tblCounseling c
-            on s.seq = c.scheduleNum
-    where s.content = '상담';
-
-
-select * from tblCurriculum;
-
--- insert into tblClassRegistration (seq, studentNum, openCurriculumNum)
---        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), :new.seq, (select v.openCurriculumNum from tblVolunteer v where :new.name = v.name and :new.ssn = v.ssn));
-      
-
-        
--- 상담일지
-insert into tblCounselList (seq, CounselingNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblCounselList), 1, '매일 9시부터 18시까지 수업을 듣는게 힘들다.');
-insert into tblCounselList (seq, CounselingNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblCounselList), 2, '저는 연봉 3000은 받고 싶습니다.');
-
-
-select * from tblCounselList;
-
-
--- 1번 학생이 신청한 상담 일자, 담당 선생님, 상담 내용을 알고 싶습니다.
-select 
-    d.seq as "학생 번호",
-    d.name as "학생 이름",
-    e.seq as "교사 번호",
-    e.name as "교사 이름",
-    s.scheduledate as "상담 일자",
-    l.content as "상담 내용"
-from tblRequestConsultation r
-    inner join tblStudent d
-        on r.studentNum = d.seq
-            inner join tblCounseling c
-                on r.seq = c.requestConsultationNum
-                    inner join tblSchedule s
-                        on s.seq = c.scheduleNum
-                            inner join tblEmployee e
-                                on s.employeeNum = e.seq
-                                    inner join tblCounselList l
-                                        on l.CounselingNum = c.seq
-where d.seq = 1; 
-       
-select
-    v.name,
-    r.result    
-from tblinterview i
-    inner join tblinterviewresult r
-       on i.seq = r.interviewNum
-        inner join tblvolunteer v
-            on r.volunteernum = v.seq
-where r.result = '합격';
-       
 
 create or replace trigger trgStudent
-    after
-    insert
-    on tblInterviewResult
-    for each row
+
 begin
-    
     procInsertStudent(:new.volunteerNum);
-      
-end trgClassTextbook;
+end trgStudent;
 /
+
 
 create or replace procedure procInsertStudent(
     pvolunteerNum in number
 )
 is
-    vcursor cursor is 
-    select
-        v.seq,
-        v.name,
-        v.ssn,
-        v.tel,
-        r.result    
-    from 
-        tblinterview i
-    inner join 
-        tblinterviewresult r on i.seq = r.interviewNum
-    inner join tblvolunteer v on r.volunteernum = v.seq
-    where r.result = '합격';
-    
-    vnum number := 0;
     vname tblStudent.name%type;
     vssn tblStudent.ssn%type;
+    vtel tblStudent.tel%type;
 begin
-    for vrow in vcursor loop
-     select name, ssn into vname,vssn from tblStudent s 
-        if vname = vrow.name and vssn  = vrow.ssn then 
-            update tblStudent set registrationDay = sysdate where vname = vrow.name and vssn  = vrow.ssn;
-        else 
+    select
+        v.name,
+        v.ssn,
+        v.tel
+    into 
+        vname, vssn, vtel
+    from 
+        tblVolunteer v
+    where seq = pvolunteerNum;
+    begin
+        select name, ssn, tel into vname, vssn, vtel from tblStudent s where name = vname and ssn = vssn and tel = vtel;
+
+        -- 기존 학생이 존재하는 경우
+        update tblStudent set registrationDay = sysdate where name = vname and ssn = vssn;
+    exception
+        when no_data_found then
+            -- 기존 학생이 없는 경우
             insert into tblStudent (seq, name, registrationDay, ssn, tel, completionCount) 
-            values ((select nvl(max(seq),0)+1 from tblStudent), vrow.name, (select interviewDate from tblInterview i inner join tblInterviewResult ir on i.seq = ir.interviewNum), vrow.ssn, vrow.tel,0);
-        end if;                                                             
-    end loop;      
+            values ((select nvl(max(seq),0)+1 from tblStudent), vname, (select interviewDate from tblInterview i inner join tblInterviewResult ir on i.seq = ir.interviewNum where vname = (select name from tblStudent where name = vname)), vssn, vtel, 0);
+    end;
 end;
 /
 
 
 
-select * from tblLectureSchedule;
-       
--- 면접
- 
-commit;  
 
-        
+
+
+-------------------------수업 등록---------------------------------------
+drop table tblClassRegistration;
+create table tblClassRegistration (         -- 占쎈땾占쎈씜 占쎈쾻嚥∽옙 占쎈�믭옙�뵠�뇡占�
+    seq number,                             -- 占쎈땾占쎈씜 占쎈쾻嚥∽옙 甕곕뜇�깈
+    studentNum number,                      -- �뤃癒��몓占쎄문甕곕뜇�깈
+    openCurriculumNum number,
+    graduateDate date                       -- 揶쏆뮇苑뺞�⑥눘�젟 甕곕뜇�깈
+);
+alter table tblClassRegistration 
+    add constraint tblClassRegistration_seq_pk primary key(seq); 
+
+alter table tblClassRegistration 
+    add constraint tblClassRegistration_studentNum_fk foreign key (studentNum) references tblStudent (seq);
+alter table tblClassRegistration 
+    add constraint tblClassRegistration_openCurriculumNum_fk foreign key (openCurriculumNum) references tblOpenCurriculum (seq); 
+
+create or replace trigger trgClassRegistration
+    after
+    insert
+    on tblStudent
+    for each row
+begin
+    
+    insert into tblClassRegistration (seq, studentNum, openCurriculumNum,graduateDate )
+        values ((select nvl(max(seq), 0) + 1 from tblClassRegistration), :new.seq, (select v.openCurriculumNum from tblVolunteer v where :new.name = v.name and :new.ssn = v.ssn),(select o.endDate from tblopenCurriculum o inner join tblVolunteer v on o.seq = v.openCurriculumNum  where :new.name = v.name and :new.ssn = v.ssn));
+      
+end trgClassRegistration;
+/
+
+select * from  tblClassRegistration;
