@@ -8,6 +8,8 @@ select * from tblVolunteer;
 select * from tblClassRegistration;
 
 select * from tblcounseling;
+
+
 select * from tblInterviewResult;
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
         values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 1, 1, '합격');

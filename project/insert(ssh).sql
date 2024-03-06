@@ -38,13 +38,13 @@ insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, st
 insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
         values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 2, 2, 2, to_date('2024-01-02', 'YYYY-MM-DD'),to_date('2024-08-02', 'YYYY-MM-DD'), 30, '진행중');        
 insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2023-01-08', 'YYYY-MM-DD'),to_date('2024-09-09', 'YYYY-MM-DD'), 22, '진행중');
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 3, 3, 3, to_date('2024-01-08', 'YYYY-MM-DD'),to_date('2024-09-09', 'YYYY-MM-DD'), 22, '진행중');
 insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 4, 4, 4, to_date('2023-01-15', 'YYYY-MM-DD'),to_date('2024-07-31', 'YYYY-MM-DD'), 26, '진행중');
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 4, 4, 4, to_date('2024-01-15', 'YYYY-MM-DD'),to_date('2024-07-31', 'YYYY-MM-DD'), 26, '진행중');
 insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 5, 5, 5, to_date('2023-01-29', 'YYYY-MM-DD'),to_date('2024-09-30', 'YYYY-MM-DD'), 18, '진행중');
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 5, 5, 5, to_date('2024-01-29', 'YYYY-MM-DD'),to_date('2024-09-30', 'YYYY-MM-DD'), 18, '진행중');
 insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
-        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 6, 6, 6, to_date('2023-02-05', 'YYYY-MM-DD'),to_date('2024-07-19', 'YYYY-MM-DD'), 23, '진행중');
+        values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 6, 6, 6, to_date('2024-02-05', 'YYYY-MM-DD'),to_date('2024-07-19', 'YYYY-MM-DD'), 23, '진행중');
         
 insert into tblOpenCurriculum (seq, curriculumNum, EmployeeNum, classroomNum, startDate, endDate, participation, openregistrationstatus)
         values ((select nvl(max(seq), 0) + 1 from tblOpenCurriculum), 1, 7, 1, to_date('2024-07-01', 'YYYY-MM-DD'),to_date('2024-12-16', 'YYYY-MM-DD'), 30, '대기');
@@ -443,62 +443,64 @@ INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NV
 INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '멘탈관리');
 INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '멘탈관리');
 INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 22, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 22, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 12, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 13, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 11, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 16, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 12, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 12, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 16, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 7, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 8, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 18, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 11, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 25, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 17, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 23, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 11, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 16, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 8, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 24, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 18, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 13, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 22, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 25, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '기타');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 17, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '멘탈관리');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 25, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '시험');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 23, '학원생활');
-INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 22, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 12, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 13, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 11, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 16, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 12, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 12, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 16, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 7, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 8, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 18, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 11, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 5, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 25, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 17, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 23, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 11, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 16, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 8, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 24, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 10, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 18, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 13, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 22, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 25, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 15, '기타');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 3, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 17, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '멘탈관리');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 6, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 25, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 19, '시험');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 23, '학원생활');
+--INSERT INTO tblRequestConsultation (seq, studentNum, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblRequestConsultation), 14, '시험');
         
+        
+delete from tblSchedule;       
 select * from tblSchedule;             
 -- 스케줄
 INSERT INTO tblSchedule (seq, employeeNum, scheduledate, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblSchedule), 1, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '개인사정');
@@ -616,20 +618,55 @@ INSERT INTO tblSchedule (seq, employeeNum, scheduledate, content) VALUES ((SELEC
 INSERT INTO tblSchedule (seq, employeeNum, scheduledate, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblSchedule), 1, TO_DATE('2024-06-14', 'YYYY-MM-DD'), '기타');
 INSERT INTO tblSchedule (seq, employeeNum, scheduledate, content) VALUES ((SELECT NVL(MAX(seq), 0) + 1 FROM tblSchedule), 1, TO_DATE('2024-06-17', 'YYYY-MM-DD'), '기타');
 
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 2, to_date('2024-01-12','YYYY-MM-DD') ,'상담');
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 3, to_date('2024-01-15','YYYY-MM-DD') ,'휴가');
-insert into tblSchedule (seq, employeeNum, scheduledate,content)
-        values ((select nvl(max(seq), 0) + 1 from tblSchedule), 4, to_date('2024-01-17','YYYY-MM-DD') ,'개인사정');
-           
+
+         
         
 -- 상담일지
-insert into tblCounselList (seq, CounselingNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblCounselList), 1, '매일 9시부터 18시까지 수업을 듣는게 힘들다.');
-insert into tblCounselList (seq, CounselingNum, content)
-        values ((select nvl(max(seq), 0) + 1 from tblCounselList), 2, '저는 연봉 3000은 받고 싶습니다.');        
-        
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 1, '코딩에 대한 열정을 유지하는 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 2, '프로그래밍 언어 선택 시 고려해야 할 사항');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 3, '프로젝트 관리 및 일정 계획');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 4, '코딩 스트레스 관리');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 5, '개인 프로젝트 아이디어를 찾는 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 6, '기술 면접 대비 전략');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 7, '온라인 코딩 커뮤니티 활용 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 8, '기술 블로그 또는 포트폴리오 구축');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 9, '공동 프로젝트 협업 전략');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 10, '프로그래밍 문제 해결 능력 향상을 위한 연습 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 11, '전문성을 향상시키는 자료 및 코스 추천');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 12, '컴퓨터 과학 이론 학습');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 13, '프로그래밍에서의 디버깅 기술');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 14, '코딩에 대한 자신감 유지 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 15, '온라인 코딩 튜토리얼 추천');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 16, '개발자 커뮤니티 참여의 장점과 효과');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 17, '오픈 소스 프로젝트 기여 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 18, '프로그래밍 세계에서의 다양성과 포용성');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 19, '개발자로서의 커리어 경로');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 20, '코딩 학원 외에도 추가로 공부해야 할 것들');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 21, '기술적 문제 해결을 위한 리서치 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 22, '프로그래밍에서의 팀워크 중요성');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 23, '효과적인 코드 리뷰 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 24, '코드 최적화 전략.');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 25, '개발자 커뮤니티 이벤트 및 컨퍼런스 참석의 장점');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 26, '개발자로서의 커뮤니케이션 스킬 발전 방법.');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 27, '개발자를 위한 동기 부여 전략');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 28, '자기 개발을 위한 프로젝트 아이디어 제안');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 29, '코드 품질 향상을 위한 테스트 및 리팩터링 기법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 30, '프로그래밍에서의 최신 트렌드 및 기술 업데이트');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 31, '개발자로서의 지속적인 학습과 성장');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 32, '코딩 인터뷰 준비 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 33, '개발자 포트폴리오 디자인 및 구성');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 34, '프로그래밍에서의 시각적 디자인 원칙');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 35, '개발자로서의 윤리 및 책임성');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 36, '프로그래밍 관련 인턴십 및 채용 정보 공유');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 37, '효과적인 프로그래밍 문서화 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 38, '개발자 스트레스 관리를 위한 심리학적 전략');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 39, '코드 버전 관리 시스템 활용 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 40, '프로그래밍 코치나 멘토를 찾는 방법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 41, '협업 스킬 강화');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 42, '기술 논의 그룹 만드는 법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 43, '코딩 공부 팁 공유');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 44, '번아웃 이겨내는 법');
+insert into tblCounselList (seq, CounselingNum, content) values ((select nvl(max(seq), 0) + 1 from tblCounselList), 45, '자기계발과 목표 설정');
         
 
 commit;

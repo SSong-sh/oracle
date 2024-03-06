@@ -823,5 +823,253 @@ alter table tblTeachReview
 
 
 
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'신기루',to_date('2023-12-28','yyyy-mm-dd'),'991108-1484695','010-1485-5867',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'임지연',to_date('2023-12-28','yyyy-mm-dd'),'991214-1846872','010-5749-2139',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍석천',to_date('2023-12-20','yyyy-mm-dd'),'991115-2489833','010-7531-2348',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오무석',to_date('2023-12-15','yyyy-mm-dd'),'991218-2547984','010-4423-3708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김지현',to_date('2023-12-14','yyyy-mm-dd'),'971122-2456232','010-3856-4397',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'엄지현',to_date('2023-12-11','yyyy-mm-dd'),'960405-1489837','010-6543-9823',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김주엽',to_date('2023-12-10','yyyy-mm-dd'),'990523-1234856','010-4753-5433',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박선영',to_date('2023-12-10','yyyy-mm-dd'),'011131-4357915','010-5862-4632',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오미숙',to_date('2023-12-09','yyyy-mm-dd'),'011117-4891524','010-4699-8124',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이기준',to_date('2023-12-09','yyyy-mm-dd'),'011113-4268923','010-1523-4526',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김루피',to_date('2023-12-09','yyyy-mm-dd'),'010401-3298372','010-4682-3219',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍수광',to_date('2023-12-09','yyyy-mm-dd'),'010824-3987325','010-5355-6998',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김조일',to_date('2023-12-09','yyyy-mm-dd'),'010404-3548434','010-4562-6236',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정기역',to_date('2023-12-07','yyyy-mm-dd'),'000203-4891524','010-8374-3745',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조미애',to_date('2023-12-07','yyyy-mm-dd'),'000101-4681269','010-5767-4526',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김유리',to_date('2023-12-07','yyyy-mm-dd'),'010916-3468219','010-5213-5797',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오태연',to_date('2023-12-07','yyyy-mm-dd'),'010828-3458998','010-6251-1235',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'양세종',to_date('2023-12-05','yyyy-mm-dd'),'991214-1478451','010-8748-4313',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'양세형',to_date('2023-12-05','yyyy-mm-dd'),'010523-3314212','010-1523-1568',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김세찬',to_date('2023-12-05','yyyy-mm-dd'),'000203-4138744','010-4567-5867',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김세라',to_date('2023-12-05','yyyy-mm-dd'),'012939-4487538','010-1485-5764',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'최윤형',to_date('2023-11-30','yyyy-mm-dd'),'010523-3891527','010-5749-8622',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'최윤지',to_date('2023-11-26','yyyy-mm-dd'),'960407-1498756','010-2953-9563',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'황윤정',to_date('2023-11-25','yyyy-mm-dd'),'991129-1853215','010-7324-4397',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이준호',to_date('2023-11-25','yyyy-mm-dd'),'990204-2369154','010-6321-2543',1);
 
 
+-- 2번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조하석',to_date('2023-11-25','yyyy-mm-dd'),'010401-4784533','010-4753-1497',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김보석',to_date('2023-11-24','yyyy-mm-dd'),'010202-4684322','010-5439-0644',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정고민',to_date('2023-11-22','yyyy-mm-dd'),'980314-2498755','010-7982-7653',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김길동',to_date('2023-11-21','yyyy-mm-dd'),'991101-1987624','010-8985-4313',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김진석',to_date('2023-11-19','yyyy-mm-dd'),'001219-4681263','010-4623-2345',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍수아',to_date('2022-11-19','yyyy-mm-dd'),'970824-1135837','010-7324-1355',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오먼갤',to_date('2022-11-18','yyyy-mm-dd'),'011117-4457861','010-8847-6820',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍루미',to_date('2023-11-18','yyyy-mm-dd'),'960405-2535513','010-5832-2345',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'황지원',to_date('2023-11-18','yyyy-mm-dd'),'990305-1345233','010-7588-1235',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'봄여름',to_date('2023-11-15','yyyy-mm-dd'),'001218-4345237','010-6251-8432',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이여름',to_date('2023-11-15','yyyy-mm-dd'),'000103-4746876','010-5673-4313',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'우영우',to_date('2023-11-09','yyyy-mm-dd'),'000205-3599845','010-3452-2180',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'도레미',to_date('2023-11-08','yyyy-mm-dd'),'000102-3399854','010-5767-5764',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'입니다',to_date('2023-11-07','yyyy-mm-dd'),'010203-3856213','010-8847-4685',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'황시농',to_date('2023-11-06','yyyy-mm-dd'),'011129-4235689','010-6215-9563',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이기수',to_date('2023-11-05','yyyy-mm-dd'),'011127-4548438','010-4623-8565',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이오리',to_date('2023-11-05','yyyy-mm-dd'),'960405-2456567','010-1485-7534',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이은솔',to_date('2023-11-02','yyyy-mm-dd'),'990919-2369156','010-6875-2180',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'미연세',to_date('2023-10-30','yyyy-mm-dd'),'990925-1468425','010-6321-9823',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오기라',to_date('2023-10-30','yyyy-mm-dd'),'991112-1357914','010-5213-9823',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오범택',to_date('2023-10-29','yyyy-mm-dd'),'000913-3456562','010-8983-5235',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍사러',to_date('2023-10-28','yyyy-mm-dd'),'960407-1313586','010-7588-5867',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이준기',to_date('2023-10-27','yyyy-mm-dd'),'990827-2872125','010-8985-8753',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'미노아',to_date('2023-10-27','yyyy-mm-dd'),'990818-2376511','010-4565-1568',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오다리',to_date('2023-10-26','yyyy-mm-dd'),'000815-4895215','010-5767-7494',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이노이',to_date('2023-10-26','yyyy-mm-dd'),'010824-4856214','010-3948-2383',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'시윤지',to_date('2023-10-25','yyyy-mm-dd'),'991124-1784533','010-5862-9155',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박원빈',to_date('2023-10-25','yyyy-mm-dd'),'990204-1468422','010-8748-4235',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이사러',to_date('2023-10-25','yyyy-mm-dd'),'991129-1468421','010-6872-7484',0);
+
+
+-- 3번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'보니라',to_date('2023-10-25','yyyy-mm-dd'),'011131-4895217','010-7324-8434',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정소리',to_date('2023-10-24','yyyy-mm-dd'),'010401-3235686','010-6985-5314',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정시러',to_date('2023-10-23','yyyy-mm-dd'),'010102-4468215','010-3452-6894',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이미소',to_date('2023-10-19','yyyy-mm-dd'),'001216-3123874','010-4563-6998',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'동그라',to_date('2023-10-18','yyyy-mm-dd'),'001214-4457863','010-1743-4632',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정기석',to_date('2023-10-18','yyyy-mm-dd'),'001217-3345232','010-3452-8622',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍길동',to_date('2023-10-17','yyyy-mm-dd'),'820417-1947283','010-2345-2348',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강니먀',to_date('2023-10-16','yyyy-mm-dd'),'021212-3456123','010-7588-3708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'황려기',to_date('2023-10-15','yyyy-mm-dd'),'980813-1223543','010-2346-6894',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'미낭려',to_date('2023-10-14','yyyy-mm-dd'),'960912-1234557','010-5673-5677',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'니액로',to_date('2023-10-13','yyyy-mm-dd'),'000123-3543234','010-4837-3555',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'허라나',to_date('2023-10-12','yyyy-mm-dd'),'010214-4912029','010-3948-8434',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'니다로',to_date('2023-10-11','yyyy-mm-dd'),'980617-1283940','010-2456-4313',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'호마이',to_date('2023-10-09','yyyy-mm-dd'),'970910-2858759','010-2953-8569',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'리기분',to_date('2023-10-08','yyyy-mm-dd'),'991129-1284759','010-1973-3219',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'나가동',to_date('2023-10-07','yyyy-mm-dd'),'020101-3281923','010-8897-9155',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'히다동',to_date('2023-10-06','yyyy-mm-dd'),'010401-4839202','010-9875-6284',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'미올동',to_date('2023-10-05','yyyy-mm-dd'),'010202-3018275','010-8799-2139',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍기동',to_date('2023-10-04','yyyy-mm-dd'),'980314-2048576','010-6344-5433',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정길동',to_date('2023-10-03','yyyy-mm-dd'),'991101-1827405','010-1743-9838',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강호동',to_date('2023-10-02','yyyy-mm-dd'),'001219-4912343','010-1234-6820',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이미준',to_date('2023-09-30','yyyy-mm-dd'),'970407-1313286','010-7688-5267',0);
+
+
+-- 4번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍사니',to_date('2023-09-30','yyyy-mm-dd'),'980827-2872325','010-8785-8353',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'니무오',to_date('2023-09-29','yyyy-mm-dd'),'940818-2376411','010-4865-1468',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'호니아',to_date('2023-09-28','yyyy-mm-dd'),'010815-4895515','010-5967-7594',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정기장',to_date('2023-09-27','yyyy-mm-dd'),'020824-4856614','010-3248-2683',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'송미노',to_date('2023-09-26','yyyy-mm-dd'),'941124-1784733','010-5362-9155',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'유재선',to_date('2023-09-25','yyyy-mm-dd'),'950204-1468122','010-8448-4135',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박명숙',to_date('2023-09-24','yyyy-mm-dd'),'961129-1468221','010-6572-7284',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정횽돈',to_date('2023-09-23','yyyy-mm-dd'),'021131-4895317','010-7624-8334',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정주나',to_date('2023-09-22','yyyy-mm-dd'),'010401-3235486','010-6185-5414',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정호민',to_date('2023-09-21','yyyy-mm-dd'),'010102-4468515','010-3252-6694',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이연서',to_date('2023-09-21','yyyy-mm-dd'),'021216-3123674','010-4563-6198',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이연아',to_date('2023-09-21','yyyy-mm-dd'),'021214-4457763','010-1143-2632',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김연아',to_date('2023-09-21','yyyy-mm-dd'),'011217-3345132','010-3252-5622',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍무니',to_date('2023-09-21','yyyy-mm-dd'),'840417-1942283','010-2645-6348',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍당무',to_date('2023-09-21','yyyy-mm-dd'),'020404-3453123','010-7788-1708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍다은',to_date('2023-09-20','yyyy-mm-dd'),'910531-1223543','010-2146-2894',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김서진',to_date('2023-09-19','yyyy-mm-dd'),'920612-1236557','010-5273-3677',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이서진',to_date('2023-09-18','yyyy-mm-dd'),'030609-3543234','010-4637-5555',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이서준',to_date('2023-09-17','yyyy-mm-dd'),'010617-4914029','010-3748-8434',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박서준',to_date('2023-09-16','yyyy-mm-dd'),'940617-1285940','010-2416-4113',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김서준',to_date('2023-09-15','yyyy-mm-dd'),'960910-2857759','010-2153-8369',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오미나',to_date('2023-09-14','yyyy-mm-dd'),'971129-1282759','010-1273-3519',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오나라',to_date('2023-09-13','yyyy-mm-dd'),'010101-3284923','010-8397-9655',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김제니',to_date('2023-09-12','yyyy-mm-dd'),'020401-4837202','010-9475-6184',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'기제니',to_date('2023-09-12','yyyy-mm-dd'),'020202-3018275','010-8599-2239',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이지수',to_date('2023-09-11','yyyy-mm-dd'),'960314-2045576','010-6644-5333',0);
+
+
+-- 5번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍지수',to_date('2023-09-09','yyyy-mm-dd'),'971101-1822405','010-1743-9438',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김지수',to_date('2023-09-09','yyyy-mm-dd'),'011219-4913343','010-1134-6520',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이미준',to_date('2023-08-29','yyyy-mm-dd'),'970407-1313286','010-7528-5863',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍사니',to_date('2023-08-28','yyyy-mm-dd'),'980827-2872325','010-8935-8754',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'니무오',to_date('2023-08-27','yyyy-mm-dd'),'940818-2376411','010-4545-1565',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'호니아',to_date('2023-08-26','yyyy-mm-dd'),'010815-4895515','010-5757-7496',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정기장',to_date('2023-08-25','yyyy-mm-dd'),'020824-4856614','010-3968-2387',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'송미노',to_date('2023-08-24','yyyy-mm-dd'),'941124-1784733','010-5872-9158',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'유재선',to_date('2023-08-24','yyyy-mm-dd'),'950204-1468122','010-8718-4239',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박명숙',to_date('2023-08-24','yyyy-mm-dd'),'961129-1468221','010-6822-7480',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정횽돈',to_date('2023-08-23','yyyy-mm-dd'),'021131-4895317','010-7334-8431',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정주나',to_date('2023-08-22','yyyy-mm-dd'),'010401-3235486','010-6945-5312',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정호민',to_date('2023-08-22','yyyy-mm-dd'),'010102-4468515','010-3452-6893',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이연서',to_date('2023-08-21','yyyy-mm-dd'),'021216-3123674','010-4563-6994',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이연아',to_date('2023-08-19','yyyy-mm-dd'),'021214-4457763','010-1773-4635',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김연아',to_date('2023-08-19','yyyy-mm-dd'),'011217-3345132','010-3412-8626',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍무니',to_date('2023-08-18','yyyy-mm-dd'),'840417-1942283','010-2325-2347',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍당무',to_date('2023-08-18','yyyy-mm-dd'),'021212-3453123','010-7538-3708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍다은',to_date('2023-08-16','yyyy-mm-dd'),'911111-1223543','010-2346-6899',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김서진',to_date('2023-08-16','yyyy-mm-dd'),'920909-1236557','010-5653-5673',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이서진',to_date('2023-08-15','yyyy-mm-dd'),'031212-3543234','010-4867-3554',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이서준',to_date('2023-08-14','yyyy-mm-dd'),'011111-4914029','010-3978-8435',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박서준',to_date('2023-08-13','yyyy-mm-dd'),'940617-1285940','010-2426-4316',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김서준',to_date('2023-08-12','yyyy-mm-dd'),'960910-2857759','010-2933-8567',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오미나',to_date('2023-08-12','yyyy-mm-dd'),'971129-1282759','010-1943-3218',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오나라',to_date('2023-08-09','yyyy-mm-dd'),'010101-3284923','010-8857-9159',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김제니',to_date('2023-08-08','yyyy-mm-dd'),'020401-4837202','010-9865-6282',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'기제니',to_date('2023-08-07','yyyy-mm-dd'),'020202-3018275','010-8719-2133',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이지수',to_date('2023-08-06','yyyy-mm-dd'),'960314-2045576','010-6384-5434',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍지수',to_date('2023-08-05','yyyy-mm-dd'),'971101-1822405','010-1763-9835',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김지수',to_date('2023-08-04','yyyy-mm-dd'),'011219-4913343','010-1294-6826',0);
+
+
+-- 6번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박서정',to_date('2023-07-28','yyyy-mm-dd'),'980307-1313786','010-7588-5867',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박서진',to_date('2023-07-27','yyyy-mm-dd'),'970427-2872625','010-8985-8753',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이소윤',to_date('2023-07-26','yyyy-mm-dd'),'980118-2376511','010-4565-1568',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'황소윤',to_date('2023-07-26','yyyy-mm-dd'),'050315-4895415','010-5767-7494',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'몬스타',to_date('2023-07-25','yyyy-mm-dd'),'020224-4856314','010-3948-2383',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이민혁',to_date('2023-07-25','yyyy-mm-dd'),'951224-1784233','010-5862-9155',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'유기현',to_date('2023-07-24','yyyy-mm-dd'),'910304-1468322','010-8748-4235',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'손현우',to_date('2023-07-24','yyyy-mm-dd'),'971129-1462221','010-6872-7484',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이주헌',to_date('2023-07-23','yyyy-mm-dd'),'011131-4895317','010-7324-8434',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이주연',to_date('2023-07-23','yyyy-mm-dd'),'020501-3236486','010-6985-5314',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조주현',to_date('2023-07-22','yyyy-mm-dd'),'010502-4467515','010-3452-6894',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'유수민',to_date('2023-07-22','yyyy-mm-dd'),'031116-3128674','010-4563-6998',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이현정',to_date('2023-07-21','yyyy-mm-dd'),'031114-4451763','010-1743-4632',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'임장균',to_date('2023-07-21','yyyy-mm-dd'),'021117-3342132','010-3452-8622',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'채형원',to_date('2023-07-19','yyyy-mm-dd'),'890517-1943283','010-2345-2348',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'채종원',to_date('2023-07-19','yyyy-mm-dd'),'010111-3454123','010-7588-3708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'임총무',to_date('2023-07-18','yyyy-mm-dd'),'920411-1225543','010-2346-6894',0);
+
+
+-- 9번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김중앙',to_date('2022-12-28','yyyy-mm-dd'),'971017-1313586','010-7348-1847',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김진주',to_date('2022-12-27','yyyy-mm-dd'),'941017-2874625','010-8525-2753',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이진주',to_date('2022-12-25','yyyy-mm-dd'),'981108-2375711','010-4645-3568',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이민희',to_date('2022-12-24','yyyy-mm-dd'),'010105-4896815','010-5757-4474',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김민희',to_date('2022-12-21','yyyy-mm-dd'),'020304-4857914','010-3818-5383',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조민희',to_date('2022-12-21','yyyy-mm-dd'),'951204-1781433','010-5922-6125',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김민지',to_date('2022-12-20','yyyy-mm-dd'),'911204-1462522','010-8138-7235',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조민지',to_date('2022-12-19','yyyy-mm-dd'),'971109-1463621','010-6242-8444',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박미수',to_date('2022-12-18','yyyy-mm-dd'),'011001-4894717','010-7354-9454',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박수미',to_date('2022-12-17','yyyy-mm-dd'),'021201-3235886','010-6465-4364',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김경남',to_date('2022-12-16','yyyy-mm-dd'),'011202-4466215','010-3572-5874',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이경남',to_date('2022-12-15','yyyy-mm-dd'),'031206-3127374','010-4683-6988',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강남동',to_date('2022-12-14','yyyy-mm-dd'),'031204-4458463','010-1793-7692',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김희순',to_date('2022-12-09','yyyy-mm-dd'),'021207-3349532','010-3822-8602',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'오채원',to_date('2022-12-08','yyyy-mm-dd'),'891107-1940683','010-2935-9318',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'배재은',to_date('2022-11-28','yyyy-mm-dd'),'010406-3459723','010-7048-7728',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'전혜진',to_date('2022-11-27','yyyy-mm-dd'),'920502-1226843','010-2856-4933',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김혜진',to_date('2022-11-26','yyyy-mm-dd'),'960606-1235957','010-5763-3557',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'헝가리',to_date('2022-11-25','yyyy-mm-dd'),'021203-3544734','010-4477-4565',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이모들',to_date('2022-11-19','yyyy-mm-dd'),'021206-4913929','010-6288-5464',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강애남',to_date('2022-11-18','yyyy-mm-dd'),'970507-1223040','010-7326-6133',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'최원호',to_date('2022-11-17','yyyy-mm-dd'),'980300-2834959','010-8423-7569',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강미애',to_date('2022-11-16','yyyy-mm-dd'),'991209-1245459','010-9533-8214',0);
+
+
+
+-- 10번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이성훈',to_date('2022-06-19','yyyy-mm-dd'),'031216-3128374','010-4583-7998',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이성진',to_date('2022-06-18','yyyy-mm-dd'),'031214-4451463','010-1793-8632',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김후성',to_date('2022-06-17','yyyy-mm-dd'),'021217-3342532','010-3422-9622',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박수연',to_date('2022-05-29','yyyy-mm-dd'),'891117-1943683','010-2335-0348',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강수연',to_date('2022-05-28','yyyy-mm-dd'),'010416-3454723','010-7548-4708',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김수연',to_date('2022-05-27','yyyy-mm-dd'),'920512-1225843','010-2356-8943',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박해원',to_date('2022-05-26','yyyy-mm-dd'),'960626-1236957','010-5663-6567',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박환희',to_date('2022-05-15','yyyy-mm-dd'),'021213-3547734','010-4877-7555',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이환희',to_date('2022-05-15','yyyy-mm-dd'),'021216-4918929','010-3988-8434',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김환희',to_date('2022-05-15','yyyy-mm-dd'),'970517-1221040','010-2426-3134',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정수연',to_date('2022-05-14','yyyy-mm-dd'),'980310-2837959','010-2923-6569',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'장수연',to_date('2022-05-13','yyyy-mm-dd'),'991229-1242459','010-1933-3219',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김해원',to_date('2022-05-12','yyyy-mm-dd'),'020501-3254523','010-8847-4155',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박혜원',to_date('2022-05-10','yyyy-mm-dd'),'030501-4637602','010-9855-5284',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박해진',to_date('2022-05-10','yyyy-mm-dd'),'030402-3318775','010-8769-6139',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박해일',to_date('2022-05-09','yyyy-mm-dd'),'980314-2645876','010-6374-7433',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김고은',to_date('2022-05-05','yyyy-mm-dd'),'991101-1872105','010-1783-1838',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이도현',to_date('2022-05-04','yyyy-mm-dd'),'001219-4914243','010-1264-2820',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김희연',to_date('2022-04-28','yyyy-mm-dd'),'971007-1314586','010-7338-0847',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이희연',to_date('2022-04-27','yyyy-mm-dd'),'931027-2875625','010-8425-2753',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조주미',to_date('2022-04-26','yyyy-mm-dd'),'921118-2376711','010-4545-3568',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김수민',to_date('2022-04-25','yyyy-mm-dd'),'010115-4897815','010-5657-4474',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'우수미',to_date('2022-04-24','yyyy-mm-dd'),'020324-4858914','010-3718-6383',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김희수',to_date('2022-04-19','yyyy-mm-dd'),'981224-1783433','010-5822-7125',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'한혜진',to_date('2022-04-18','yyyy-mm-dd'),'921204-1464522','010-8938-8235',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'홍송관',to_date('2022-04-17','yyyy-mm-dd'),'971119-1465621','010-6242-9444',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'송수광',to_date('2022-04-16','yyyy-mm-dd'),'011031-4896717','010-7354-1454',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'송소리',to_date('2022-04-15','yyyy-mm-dd'),'021201-3237886','010-6465-2364',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'송미연',to_date('2022-04-14','yyyy-mm-dd'),'011202-4468215','010-3572-3874',0);
+
+
+-- 11번 개설과정
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'조미연',to_date('2022-04-13','yyyy-mm-dd'),'031216-3122374','010-4683-7988',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'사쿠라',to_date('2022-04-12','yyyy-mm-dd'),'031214-4453463','010-1793-8692',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김채원',to_date('2022-03-29','yyyy-mm-dd'),'021217-3344532','010-3822-9602',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김채영',to_date('2022-03-28','yyyy-mm-dd'),'891117-1945683','010-2235-0318',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박채연',to_date('2022-03-27','yyyy-mm-dd'),'010416-3459723','010-7148-4728',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'박채원',to_date('2022-03-19','yyyy-mm-dd'),'920512-1227843','010-2256-8933',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'카즈하',to_date('2022-03-18','yyyy-mm-dd'),'960626-1235957','010-5363-6557',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'카리나',to_date('2022-03-17','yyyy-mm-dd'),'021213-3544734','010-4377-7565',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김윈터',to_date('2022-03-16','yyyy-mm-dd'),'021216-4913929','010-6988-8464',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김닝닝',to_date('2022-02-15','yyyy-mm-dd'),'970517-1224040','010-7426-3133',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'정윈노',to_date('2022-02-14','yyyy-mm-dd'),'980310-2835959','010-8923-6569',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강승윤',to_date('2022-02-14','yyyy-mm-dd'),'991229-1246459','010-9933-3214',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김승윤',to_date('2022-02-13','yyyy-mm-dd'),'020501-3257523','010-0847-4155',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김호중',to_date('2022-02-12','yyyy-mm-dd'),'030501-4638602','010-7855-5286',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김희중',to_date('2022-02-12','yyyy-mm-dd'),'030402-3312775','010-5769-6137',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강효묵',to_date('2022-02-11','yyyy-mm-dd'),'980314-2641876','010-4374-7438',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'강혜인',to_date('2022-02-11','yyyy-mm-dd'),'991101-1872105','010-3783-1832',1);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김중화',to_date('2022-02-10','yyyy-mm-dd'),'001219-4913243','010-3264-2823',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김중앙',to_date('2022-12-28','yyyy-mm-dd'),'971017-1313586','010-7348-1847',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'김진주',to_date('2022-12-27','yyyy-mm-dd'),'941017-2874625','010-8525-2753',0);
+insert into tblStudent values ((select nvl(max(seq),0) +1 from tblStudent),'이진주',to_date('2022-12-25','yyyy-mm-dd'),'981108-2375711','010-4645-3568',0);
+
+select * from tblStudent;
