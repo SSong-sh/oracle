@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="14" version="2.0">
 <workbenchAdvisor/>
-<window height="1039" maximized="true" width="974" x="-7" y="0">
+<window height="1039" width="824" x="1103" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -71,12 +71,16 @@
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.help.ui.HelpView" partName="도움말">
+<viewState pageId="context-help-page"/>
+</view>
 <view id="com.tomato.exerd.ui.views.thumbnail" partName="썸네일">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ResourceNavigator" partName="네비게이터">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
-<filters>&#x0A;<filter element=".*" isEnabled="false"/>
+<filters>
+<filter element=".*" isEnabled="false"/>
 </filters>
 </viewState>
 </view>
@@ -121,15 +125,28 @@
 <new_wizard_action id="com.tomato.exerd.ui.wizards.newEXerdWizardFromDatabase"/>
 <new_wizard_action id="com.tomato.exerd.term.ui.wizard.NewTermDictionaryWizard"/>
 <new_wizard_action id="com.tomato.exerd.xscript.ui.wizard.NewXScriptWizard"/>
-<view id="com.tomato.exerd.ui.views.thumbnail"/>
-<view id="com.tomato.exerd.modelview3.ModelView3"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@14960c8" orientation="512" selectedTabId="org.eclipse.help.ui.HelpView" style="0">
+<fastViews>
+<view id="org.eclipse.help.ui.HelpView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="rightFolder" orientation="512" selectedTabId="com.tomato.exerd.modelview3.ModelView3" style="0">
+<fastViews>
+<view id="com.tomato.exerd.modelview3.ModelView3" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
 <fastViewBar fastViewLocation="1024" id="bottomFolder" orientation="256" selectedTabId="com.tomato.exerd.ui.views.domain" style="0">
 <fastViews>
 <view id="com.tomato.exerd.ui.views.domain" ratio="0.3"/>
 <view id="com.tomato.exerd.validate.ui.ValidateView" ratio="0.3"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@43b128" orientation="512" selectedTabId="com.tomato.exerd.ui.views.thumbnail" style="0">
+<fastViews>
+<view id="com.tomato.exerd.ui.views.thumbnail" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@136b447" orientation="512" selectedTabId="org.eclipse.gef.ui.palette_view" style="0">
@@ -152,7 +169,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@14960c8" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="leftFolder">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
@@ -161,21 +178,16 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.11193242" ratioLeft="106" ratioRight="841" relationship="2" relative="leftFolder"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@43b128" ratio="0.86125654" ratioLeft="658" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.tomato.exerd.ui.views.thumbnail" appearance="2" expanded="2">
-<page content="com.tomato.exerd.ui.views.thumbnail" label="썸네일"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="com.tomato.exerd.ui.views.thumbnail" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="rightFolder" ratio="0.249226" ratioLeft="161" ratioRight="485" relationship="4" relative="org.eclipse.ui.internal.ViewStack@43b128">
-<folder activePageID="com.tomato.exerd.modelview3.ModelView3" appearance="2" expanded="2">
-<page content="com.tomato.exerd.modelview3.ModelView3" label="모델"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="아웃라인"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="com.tomato.exerd.modelview3.ModelView3" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="bottomFolder" ratio="0.78981584" ratioLeft="729" ratioRight="194" relationship="4" relative="org.eclipse.ui.editorss">
@@ -265,6 +277,12 @@
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="leftFolder"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@136b447"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@14960c8"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@43b128"/>
+<trimItem IMemento.internal.id="rightFolder"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>

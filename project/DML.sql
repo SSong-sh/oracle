@@ -416,6 +416,28 @@ insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),201
 insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),202,to_date('2023-08-02','yyyy-mm-dd'),'취업','Y');
 insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),203,to_date('2023-08-02','yyyy-mm-dd'),'미취업','Y');
 
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),204,to_date('2023-08-02','yyyy-mm-dd'),'미취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),205,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),206,to_date('2023-08-02','yyyy-mm-dd'),'취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),207,to_date('2023-08-02','yyyy-mm-dd'),'미취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),208,to_date('2023-08-02','yyyy-mm-dd'),'미취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),209,to_date('2023-08-02','yyyy-mm-dd'),'미취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),210,to_date('2023-08-02','yyyy-mm-dd'),'미취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),211,to_date('2023-08-02','yyyy-mm-dd'),'미취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),212,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),213,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),214,to_date('2023-08-02','yyyy-mm-dd'),'미취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),215,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),216,to_date('2023-08-02','yyyy-mm-dd'),'미취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),217,to_date('2023-08-02','yyyy-mm-dd'),'취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),218,to_date('2023-08-02','yyyy-mm-dd'),'미취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),219,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),220,to_date('2023-08-02','yyyy-mm-dd'),'취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),221,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),222,to_date('2023-08-02','yyyy-mm-dd'),'취업','Y');
+insert into tblGraduate values ((select nvl(max(seq),0) +1 from tblGraduate),223,to_date('2023-08-02','yyyy-mm-dd'),'취업','N');
+
+
 
 
 
@@ -2725,83 +2747,86 @@ insert into tblLectureSchedule values((select nvl(max(seq),0) + 1 from tblLectur
 insert into tblLectureSchedule values((select nvl(max(seq),0) + 1 from tblLectureSchedule), 10, '대기');
 
 -- 수업 등록 
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 1, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 2, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 3, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 4, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 5, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 6, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 7, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 8, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 9, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 10, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 11, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 12, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 13, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 14, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 15, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 16, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 17, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 18, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 19, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 20, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 21, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 22, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 23, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 24, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 25, 1, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 151, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 152, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 153, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 154, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 155, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 156, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 157, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 158, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 159, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 160, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 161, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 162, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 163, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 164, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 165, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 166, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 167, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 168, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 169, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 170, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 171, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 172, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 173, 9, to_date('2024-06-17', 'YYYY-MM-DD'));
 
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 26, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 27, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 28, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 29, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 30, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 31, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 32, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 33, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 34, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 35, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 36, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 37, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 38, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 39, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 40, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 41, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 42, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 43, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 44, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 45, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 46, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 47, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 48, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 49, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 50, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 51, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 52, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 53, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 54, 2, to_date('2024-08-02', 'YYYY-MM-DD'));
 
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 55, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 56, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 57, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 58, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 59, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 60, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 61, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 62, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 63, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 64, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 65, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 66, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 67, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 68, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 69, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 70, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 71, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 72, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 73, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
-insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 74, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
---insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 75, 3, to_date('2024-09-09', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 174, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 175, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 176, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 177, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 178, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 179, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 180, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 181, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 182, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 183, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 184, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 185, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 186, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 187, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 188, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 189, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 190, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 191, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 192, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 193, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 194, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 195, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 196, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 197, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 198, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 199, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 200, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 201, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 202, 10, to_date('2024-06-17', 'YYYY-MM-DD'));
+
+
+
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 203, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 204, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 205, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 206, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 207, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 208, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 209, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 210, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 211, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 212, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 213, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 214, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 215, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 216, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 217, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 218, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 219, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 220, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 221, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 222, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+insert into tblclassregistration (seq, studentNum, openCurriculumNum, graduateDate) values ((select nvl(max(seq), 0) + 1 from tblclassregistration), 223, 11, to_date('2024-06-17', 'YYYY-MM-DD'));
+
+
 
 -- 면접
 insert into tblInterview (seq, employeeNum, interviewDate )
@@ -2962,9 +2987,9 @@ insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
         values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 3, 30, '합격');
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
-        values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 4, 31, '합격');
+        values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 3, 31, '합격');
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
-        values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 4, 32, '불합격');
+        values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 3, 32, '불합격');
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
         values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 4, 33, '합격');
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
@@ -3050,27 +3075,28 @@ insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
 insert into tblInterviewResult (seq, interviewNum, volunteerNum, result)
         values ((select nvl(max(seq), 0) + 1 from tblInterviewResult), 7, 74, '합격');
 
+
 --도서리뷰
 --insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),수료생번호,리뷰내용,평점);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'이해가 잘됩니다.',5);               
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),2,'좋아요.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),3,'최고의 책.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),4,'이해가 잘됨.',5);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'너무 좋음.',5);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),6,'최고최고.',5);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'너무 좋음.',5);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'최고최고.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'무조건 이 책임.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),8,'이 책은 보세요',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),9,'그림이 있어서 이해가 쉬움.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),10,'짱짱.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),11,'이해가 잘됩니다.',5);               
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),12,'좋아요.',5);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'좋아요.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),13,'최고의 책.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),14,'이해가 쉬움.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'정말 좋음.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),16,'최고임.',5);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),17,'무조건 이 책임.',5);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'무조건 이 책임.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),18,'이 책은 보세요',5);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),19,'그림이 많아서 읽기 편함.',5);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'그림이 많아서 읽기 편함.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),20,'진짜 좋음.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),21,'너무 좋음.',5);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),22,'최고.',5);
@@ -3082,18 +3108,18 @@ insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),2,'너
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),3,'적당히 좋음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),4,'좋음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'굿굿 좋음.',4);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),6,'적당히 좋음.',4);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'적당히 좋음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'낫배드.',4);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),8,'이 책 나쁘지 않음.',4);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'이 책 나쁘지 않음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),9,'그냥 그럼.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'조금은 아쉬움.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),11,'엄청 나쁘지 않음.',4);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),12,'정말 좋지는 않음.',4);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'정말 좋지는 않음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),13,'적당히 읽을만 함.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'애매함.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),15,'적당하게 좋음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),16,'한번쯤 읽으면 좋음.',4);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),17,'이해가 어렵지 않음.',4);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'이해가 어렵지 않음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),18,'이 책 나쁘지 않음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),19,'막 어렵진 않음.',4);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),20,'뭔가 부족하지만 좋음.',4);
@@ -3109,14 +3135,14 @@ insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),4,'책
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'설명이 부족함.',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),6,'적당함',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'좋기도 하고 나쁘기도 함',3);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),8,'좀 별로',3);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'좀 별로',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),9,'좋아요',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),10,'설명이 좋음.',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),11,'음... 적당함',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),12,'이도저도 아닌듯',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),13,'도움이 될까 싶음',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'가성비론 괜춘',3);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),15,'설명이 애매함',3);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'설명이 애매함',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),16,'적당한 듯 아닌 듯 함.',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),17,'좋다고 말하기에 좀 그럼.',3);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),18,'괜찮은 듯?',3);
@@ -3129,10 +3155,10 @@ insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),24,'�
 -------------------------------------------------------------------------------------------------------------
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'안보는게 좋을듯',2);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),2,'설명이 이상함',2);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),3,'이 책 보지마요',2);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'이 책 보지마요',2);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),4,'별로임',2);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'그냥 그럼',2);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),6,'이걸 왜봐',2);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'이걸 왜봐',2);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'책이 불친절함',2);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),8,'이거 싫음',2);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),9,'그냥 그래요',2);
@@ -3153,10 +3179,10 @@ insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),23,'�
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),24,'절대 보지마. 비추천',2);
 -------------------------------------------------------------------------------------------------------------
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'쓰레기임',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),2,'가독성 떨어짐',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'가독성 떨어짐',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),3,'보지마세요 절대',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),4,'절대 비추',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'시간 아깝다',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'시간 아깝다',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),6,'내용이 너무 부실함',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'개별로',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),8,'진짜 별로',1);
@@ -3164,18 +3190,18 @@ insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),9,'절
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),7,'내용이 너무 어렵고 재미없음',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),11,'쓰레기통에 버리자.',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),12,'가독성 쓰레기.',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),13,'보지마세요.',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'보지마세요.',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),14,'아오 이걸 왜 추천함.',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),15,'시간 낭비 오짐.',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'시간 낭비 오짐.',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),16,'내용이 너무 부실함',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),17,'개개개별로',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),18,'진짜 정말 별로',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),19,'돈 바닥에 버리셈.',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),1,'돈 바닥에 버리셈.',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),20,'내용이 너무 어려워요.',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),21,'이걸 왜 보죠?.',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),22,'어려우면서 이해도 안됨.',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'어려우면서 이해도 안됨.',1);
 insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),23,'우리집 고양이 스크레치용.',1);
-insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),24,'읽다가 취침.',1);
+insert into tblReview values((select nvl(max(seq), 0) + 1 from tblReview),5,'읽다가 취침.',1);
 
 ---공통도서
 insert into tblBook values((select nvl(max(seq), 0) + 1 from tblBook),'이것이 자바다', '이지은','한빛출판사',to_date('2019-04-10','yyyy-mm-dd'));
